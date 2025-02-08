@@ -34,7 +34,14 @@ class EventPractice extends Component {
           value={this.state.username}
           onChange={this.handleChange}
         />
-        
+        <input
+          type="text"
+          name="message"
+          placeholder="아무거나 입력해보세요"
+          value={this.state.message}
+          onChange={this.handleChange}
+          onKeyPress={this.handleKeyPress}
+        />
         <button onClick={this.handleClick}>확인</button>
       </div>
     );
